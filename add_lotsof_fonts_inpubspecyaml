@@ -1,0 +1,69 @@
+void main() {
+  
+  
+List fontPaths = [
+ "assets/fonts/aquarium.ttf"
+,"assets/fonts/Artifika-Regular.ttf"
+,"assets/fonts/BubblegumSans-Regular.ttf"
+,"assets/fonts/cabin_regular.ttf"
+,"assets/fonts/comicneue_bolditalic.ttf"
+,"assets/fonts/Cookie-Regular.ttf"
+,"assets/fonts/Courgette-Regular.ttf"
+,"assets/fonts/DancingScript-Bold.ttf"
+,"assets/fonts/DancingScript-Regular.ttf"
+,"assets/fonts/fabfeltscript-bold.ttf"
+,"assets/fonts/HappyMonkey-Regular.ttf"
+,"assets/fonts/Lobster-Regular.ttf"
+,"assets/fonts/Montserrat-Black.ttf"
+,"assets/fonts/Montserrat-Medium.ttf"
+,"assets/fonts/MONTSERRAT-REGULAR.TTF"
+,"assets/fonts/righteous_regular.ttf"
+,"assets/fonts/roboto_light.ttf"
+,"assets/fonts/roboto_medium.ttf"
+,"assets/fonts/roboto_thin.ttf"
+,"assets/fonts/RougeScript-Regular.ttf"
+,"assets/fonts/sansitaswashed_regular.ttf"
+,"assets/fonts/Yellowtail-Regular.ttf"
+];
+
+List fontnames = ["aquarium"
+,"Artifika-Regular"
+,"BubblegumSans-Regular"
+,"cabin_regular"
+,"comicneue_bolditalic"
+,"Cookie-Regular"
+,"Courgette-Regular"
+,"DancingScript-Bold"
+,"DancingScript-Regular"
+,"fabfeltscript-bold"
+,"HappyMonkey-Regular"
+,"Lobster-Regular"
+,"Montserrat-Black"
+,"Montserrat-Medium"
+,"MONTSERRAT-REGULAR"
+,"righteous_regular"
+,"roboto_light"
+,"roboto_medium"
+,"roboto_thin"
+,"RougeScript-Regular"
+,"sansitaswashed_regular"
+,"Yellowtail-Regular"];
+
+  String s =
+    ''' - family: Allura-RegulAr
+   fonts:
+        - asset: assets/fonts/Allura-Regularaa.ttf''';
+  
+  print(s);
+  for(int i=0;i<fontnames.length ;i++){
+    
+    String k = s+'';
+    
+  k =  k.replaceFirst ('Allura-RegulAr', fontnames[i]).replaceAll('assets/fonts/Allura-Regularaa.ttf',fontPaths[i]);
+    
+    
+    print(k);
+    
+  }
+  
+}
